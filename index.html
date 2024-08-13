@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rejish Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="icon" href="./favicon.png">
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./content.css">
+
+</head>
+
+<body>
+
+    <!-- ------------------------------Nav Bar Code------------------------------- -->
+    <div class="fixed-navbar">
+        <div class="container navbar">
+            <span>Portfolio.</span>
+            <div id="menu">
+                <ol>
+                    <li><a href="#home1" class="home1 active" onclick="close1()">Home</a></li>
+                    <li><a href="#about1" class="about1" onclick="close1()">About</a></li>
+                    <li><a href="#skills1" class="skills1" onclick="close1()">Skills</a></li>
+                    <li><a href="#projects1" class="projects1" onclick="close1()">Projects</a></li>
+                    <li><a href="#contact1" class="contact1" onclick="close1()">Contact</a></li>
+                </ol>
+            </div>
+            <div id="toggle-nav" class="col-6"><button id="toggle" onclick="toggle()"><i
+                        class="fa-solid fa-bars"></i></button></div>
+            <div id="toggle-close" class="col-6"><button id="close" onclick="close1()"><i
+                        class="fa-solid fa-xmark"></i></button></div>
+        </div>
+    </div>
+
+
+    <!-- ------------------------------Home Page Code------------------------------- -->
+
+    <div class="home scroll-active" id="home1">
+        <div class="container home-box">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="details">
+                        <h3>Hello, Myself</h3>
+                        <h1>Rejish Raj S</h1>
+                        <h3>And I'm a <span id="typedjs"></span></h3>
+                        <br>
+                        <p>Blending creativity with a tech-driven mindset, I transitioned from Mechanical Engineering to
+                            the fast-paced world of Information Technology. Mastered Java, SQL, Spring Boot, Angular,
+                            Apache Fineract, Mifos, Docker, and AWS as a versatile Software Developer.
+                        </p>
+                        <br>
+                        <ol>
+                            <li><a href="https://www.linkedin.com/in/rejish-raj-sam" target="_blank"><i
+                                        class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="https://github.com/rejishmag" target="_blank"><i
+                                        class="fa-brands fa-github"></i></a></li>
+                            <li><a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        </ol>
+                        <br><br><br>
+                        <div class="resume"><a href="./rejishraj-resume.pdf" target="_blank"><button>Download CV <i
+                                        class="fa-solid fa-download"></i></button></a></div>
+                    </div>
+                </div>
+                <div class="col-lg-6 image">
+                    <img src="./home-dp-pic.png" alt="Profile Picture">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ------------------------------About Page Code------------------------------- -->
+
+    <div class="about scroll-active" id="about1">
+        <div class="container about-box">
+            <div class="row title">
+                <div class="col">
+                    <div class="title-fade">
+                        <h1>ABOUT ME</h1>
+                    </div>
+                    <div class="title1">
+                        <h1>ABOUT ME</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row content">
+                <div class="col-lg-7">
+                    <div class="intro">
+                        <div>
+                            <div>
+                                <h3>I'm Rejish Raj S</h3>
+                            </div>
+                            <div class="location"><i class="fa-solid fa-location-dot"></i> Nagercoil, TamilNadu</div>
+                            <br>
+                            <p>
+                                Solving Complex Problems with Code.
+                            </p>
+                            <p>
+                                "I'm a Full Stack Developer with a passion for building dynamic and interactive web
+                                applications. With over two years of experience, I have a strong command of HTML, SCSS,
+                                AngularTS, Java, Spring Boot, MySQL, PostgreSQL, AWS, Docker, Fineract, Mifos, Git and
+                                Linux. My expertise spans both front-end and back-end development, allowing me to tackle
+                                complex challenges and deliver robust solutions. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="artwork">
+                        "Debugging is like being a detective in a crime movie where you are also the murderer. Own your
+                        code, solve the mysteries."
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ------------------------------Skills Page Code------------------------------- -->
+
+    <div id="skills1" class="skills scroll-active">
+        <div class="container skill-box">
+            <div class="row title">
+                <div class="col">
+                    <div class="title-fade">
+                        <h1>SKILLS</h1>
+                    </div>
+                    <div class="title1">
+                        <h1>SKILLS</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row logo">
+                <div class="col" id="img-cont">
+                    <img id="img1" src="./logo/html.png" alt="Html">
+                    <div id="tech">HTML</div>
+                </div>
+                <div class="col" id="img-cont">
+                    <img id="img1" src="./logo/css.png" alt="Scss">
+                    <div id="tech">SCSS</div>
+                </div>
+                <div class="col" id="img-cont">
+                    <img id="img1" src="./logo/typescript.png" alt="TypeScript">
+                    <div id="tech">TYPESCRIPT</div>
+                </div>
+                <div class="col" id="img-cont">
+                    <img id="img1" src="./logo/angular.png" alt="Angular">
+                    <div id="tech">ANGULAR</div>
+                </div>
+                <div class="col" id="img-cont">
+                    <img id="img1" src="./logo/bootstrap.png" alt="Bootstrap">
+                    <div id="tech">BOOTSTRAP</div>
+                </div>
+                <div class="col" id="img-cont">
+                    <img id="img1" src="./logo/java.png" alt="Java">
+                    <div id="tech">JAVA</div>
+                </div>
+                <div class="col" id="img-cont">
+                    <img id="img1" src="./logo/spring-boot.png" alt="Spring Boot">
+                    <div id="tech">SPRING BOOT</div>
+                </div>
+                <div class="col" id="img-cont">
+                    <img id="img1" src="./logo/mysql.png" alt="MySql">
+                    <div id="tech">MYSQL</div>
+                </div>
+                <div class="col" id="img-cont">
+                    <img id="img1" src="./logo/aws.png" alt="AWS">
+                    <div id="tech">AWS</div>
+                </div>
+                <div class="col" id="img-cont">
+                    <img id="img1" src="./logo/github.png" alt="GitHub">
+                    <div id="tech">GITHUB</div>
+                </div>
+                <div class="col" id="img-cont">
+                    <img id="img1" src="./logo/docker.png" alt="Tomcat">
+                    <div id="tech">TOMCAT</div>
+                </div>
+                <div class="col" id="img-cont">
+                    <img id="img1" src="./logo/ClipartKey_2270106.png" alt="Docker">
+                    <div id="tech">DOCKER</div>
+                </div>
+            </div>
+            <div class="row education">
+                <div class="col">
+                    <h3>EDUCATION</h3>
+                    <div class="row">
+                        <div class="col-lg">
+                            <div class="box">
+                                <h6>BE MECHANICAL ENGINEERING</h6>
+                                <h6>St. Xavier’s Catholic College of Engineering</h6>
+                                <small><i class="fa-solid fa-location-dot"></i> Chunkankadai, Nagercoil</small>
+                                <div class="row">
+                                    <div class="col-7">
+                                        <small>CGPA : 7.37</small>
+                                    </div>
+                                    <div class="col">
+                                        <small>Year : 2023</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg">
+                            <div class="box">
+                                <h6>HIGHER SECONDARY EDUCATION</h6>
+                                <h6>GHSS Keezhkulam</h6>
+                                <small><i class="fa-solid fa-location-dot"></i> Karungal, Kanyakumari</small>
+                                <div class="row">
+                                    <div class="col-7">
+                                        <small>Score : 61.67%</small>
+                                    </div>
+                                    <div class="col">
+                                        <small>Year : 2019</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg">
+                            <div class="box">
+                                <h6>SECONDARY SCHOOL EDUCATION</h6>
+                                <h6>AMSI High School</h6>
+                                <small><i class="fa-solid fa-location-dot"></i> Thengapattinam, Kanyakumari</small>
+                                <div class="row">
+                                    <div class="col-7">
+                                        <small>Score : 81.6%</small>
+                                    </div>
+                                    <div class="col">
+                                        <small>Year : 2017</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ------------------------------Projects Page Code------------------------------- -->
+
+    <div id="projects1" class="projects scroll-active">
+        <div class="container project-box">
+            <div class="row title">
+                <div class="col">
+                    <div class="title-fade">
+                        <h1>PROJECTS</h1>
+                    </div>
+                    <div class="title1">
+                        <h1>PROJECTS</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row content">
+                <div class="col-lg">
+                    <div class="box">
+                        <div class="row head">
+                            <div class="col">
+                                <h5> Product Management System (PMS)</h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col cover">
+                                <img src="./projects/pms.png" alt="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <span><small>Java</small></span>
+                                <span><small>Spring Boot</small></span>
+                                <span><small>AngularTS (PRIMENG)</small></span>
+                                <span><small>TailWind SCSS</small></span>
+                                <span><small>Html</small></span>
+                                <span><small>PostgreSQL</small></span>
+                                <span><small>GitHub</small></span>
+                                <span><small>AWS</small></span>
+                            </div>
+                            <div class="info">
+                                The Product Management System (PMS) is a basic web application designed to help
+                                businesses manage their products, vendors, and communications. This project demonstrates
+                                essential skills in building and securing a full-stack application with user-friendly
+                                features.
+                                <span><button id="readmore1" onclick="readmore(1)">Read More <i
+                                            class="fa-solid fa-angle-down"></i></button></span>
+                                <span id="more1">
+                                    <br>
+                                    <p><strong> Key Modules:</strong></p>
+
+                                    <p> <strong>Product Management:</strong></p>
+
+                                    <p> Product Catalog: Users can add, update, and manage a list of products. Each
+                                        product includes details like name, description, price, and quantity.
+                                        Search & Filter: Simple search and filter options help users quickly find
+                                        specific products.
+                                    <p>
+
+                                    <p> <strong> Vendor Management: </strong></p>
+
+                                    <p> Vendor Profiles: Users can create and manage vendor information, such as names,
+                                        contact details, and products they supply.
+                                        Vendor Communication: Integrated with the email module to send basic email
+                                        notifications to vendors.</p>
+                                    <p><strong> Security Module:</strong></p>
+
+                                    <p> User Authentication: Basic login and registration system that ensures only
+                                        registered users can access the application.
+                                        Role-Based Access: Different user roles (like admin and user) are implemented to
+                                        control what each user can do within the system.</p>
+                                    <p> <strong>Email Sending Module:</strong></p>
+
+                                    <p> Email Notifications: The system can send automated emails to vendors or users
+                                        for events like new product additions or updates.
+                                        Email Templates: Simple email templates can be used for sending consistent
+                                        messages.</p>
+                                    <span><button id="readless1" onclick="readless(1)">Read Less <i
+                                                class="fa-solid fa-angle-up"></i></button></span>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- <div class="row links">
+                            <div class="col">
+                                <a href="https://my-voting-site.onrender.com/" target="_blank"><button>Visit Site &nbsp;
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
+                            </div>
+                            <div class="col">
+                                <a href="https://github.com/akxay98/mysite1" target="_blank"><button>Github &nbsp; <i
+                                            class="fa-brands fa-github"></i></button></a>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <!-- <div class="col-lg">
+                    <div class="box">
+                        <div class="row head">
+                            <div class="col">
+                                <h5>User Authentication Project</h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col cover">
+                                <img src="./projects/loginsite.gif" alt="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <span><small>Python</small></span>
+                                <span><small>Django</small></span>
+                                <span><small>PostgreSQL</small></span>
+                                <span><small>Html</small></span>
+                                <span><small>Css</small></span>
+                            </div>
+                            <div class="info">
+                                A django app for user registration and authentication using django auth model.
+                                <span><button id="readmore2" onclick="readmore(2)">Read More <i class="fa-solid fa-angle-down"></i></button></span>
+                                <span id="more2">
+                                This application opens with a unique animated toggle signin or signup page.
+                                It requires signup to register user account.
+                                Then signin using the username and password used for registration.
+                                Successfull signin lands on home page simply displaying users firstname.
+                                It also shows success and error messages.
+                                <span><button id="readless2" onclick="readless(2)">Read Less <i class="fa-solid fa-angle-up"></i></button></span>
+                            </span>
+                            </div>
+                        </div>
+                        <div class="row links">
+                            <div class="col">
+                                <a href="https://my-login-site.onrender.com/" target="_blank"><button>Visit Site &nbsp; <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
+                            </div>
+                            <div class="col">
+                                <a href="https://github.com/akxay98/login_site" target="_blank"><button>Github &nbsp; <i class="fa-brands fa-github"></i></button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg">
+                    <div class="box">
+                        <div class="row head">
+                            <div class="col">
+                                <h5>ATM Machine Functions Using Java</h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col cover">
+                                <img src="./projects/atm.gif" alt="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <span><small>Java</small></span>
+                            </div>
+                            <div class="info">
+                                A simple replica of ATM Machine services and transactions by using Java programming language.
+                                <span><button id="readmore3" onclick="readmore(3)">Read More <i class="fa-solid fa-angle-down"></i></button></span>
+                                <span id="more3">
+                                    In this program, user has to select an option from the options displayed on the screen.
+                                    The options are related to withdraw the money, deposit the money, check the balance, and exit.
+                                    It allows user to withraw and deposit amounts and display the balance as after the process.
+                                    And to check balance, it prints the total balance of the user.
+                                <span><button id="readless3" onclick="readless(3)">Read Less <i class="fa-solid fa-angle-up"></i></button></span>
+                            </span>
+                            </div>
+                        </div>
+                        <div class="row links">
+                            <div class="col">
+                                <a href="https://github.com/akxay98/Java-Mini-Projects/tree/main/ATM_Machine%20MIni%20Project" target="_blank"><button>Github &nbsp; <i class="fa-brands fa-github"></i></button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ------------------------------Contact Page Code------------------------------- -->
+
+    <div id="contact1" class="contact scroll-active">
+        <div class="container contact-box">
+            <div class="row title">
+                <div class="col">
+                    <div class="title2">
+                        <h1>CONTACT ME</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-5 call">
+                    <div class="card">
+                        <div class="mail"><a href="mailto:rejishraj44@gmail.com"><i class="fa-solid fa-envelope"></i>
+                                &nbsp; rejishraj44@gmail.com</a></div>
+                        <div class="social">
+                            <ol>
+                                <li><a href="https://www.linkedin.com/in/rejish-raj-sam" target="_blank"><i
+                                            class="fa-brands fa-linkedin-in"></i></a></li>
+                                <li><a href="https://github.com/rejishmag" target="_blank"><i
+                                            class="fa-brands fa-github"></i></a></li>
+                                <li><a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 box">
+
+                    <form action="https://api.web3forms.com/submit" method="POST">
+
+                        <input type="hidden" name="access_key" value="201787da-c998-49c9-a929-1b5b5ecf4f26">
+
+                        <input type="hidden" name="My Website" value="Portfolio">
+
+                        <div class="form-floating contactform">
+                            <input type="text" class="form-control" name="fullname" id="fullname"
+                                placeholder="Full Name" required>
+                            <label for="fullname">Your Name</label>
+                        </div>
+                        <br>
+                        <div class="form-floating contactform">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Email ID"
+                                required>
+                            <label for="email">Email ID</label>
+                        </div>
+                        <br>
+                        <div class="form-floating contactform">
+                            <input type="tel" class="form-control" name="mobile" id="mobile" placeholder="Mobile Number"
+                                required>
+                            <label for="mobile">Mobile Number</label>
+                        </div>
+                        <br>
+                        <div class="form-floating contactform">
+                            <textarea class="form-control" name="message" id="message" placeholder="Message"
+                                required></textarea>
+                            <label for="message">Type Your Message Here</label>
+                        </div>
+                        <br>
+                        <div>
+                            <button type="submit">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col up">
+                    <a href="#home1"><button><i class="fa-solid fa-circle-up"></i></button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ------------------------------Footer Code------------------------------- -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg copyrights">
+                    <small>Copyright &copy; 2024 by @rejish_rj | All Rights Reserved</small>
+                </div>
+                <div class="col-lg myname">
+                    <small>Designed by Rejish raj S</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- ------------------------------Javascript Link------------------------------- -->
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

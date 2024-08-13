@@ -1,0 +1,378 @@
+@media screen and (max-width: 640px) {
+    *
+    {
+        font-size: 14px;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 500;
+        scroll-behavior: smooth;
+    }
+    .navbar span
+    {
+        position: relative;
+        left: 1rem;
+    }
+    #menu
+    {
+        position: absolute;
+        top: 3.6rem !important;
+        background-color: #002349;
+        text-align: center;
+        width: 100%;
+        padding-bottom: 20rem;
+        display: none;
+    }
+    .navbar ol
+    {
+        position: absolute !important;
+        -webkit-box-orient: vertical !important;
+        -webkit-box-direction: normal !important;
+            -ms-flex-direction: column !important;
+                flex-direction: column !important;
+        left: 0;
+        text-align: center;
+        width: 100% !important;
+    }
+    .navbar ol li
+    {
+        padding-bottom: 4rem;
+        position: relative !important;
+        left: 0;
+        margin-left: 40% !important;
+    }
+    .navbar ol li a
+    {
+        z-index: 5 !important;
+        font-size: 1.2rem !important;
+    }
+    .navbar ol li a:hover
+    {
+        font-size: 1.1rem !important;
+    }
+    #toggle-nav button,#toggle-close button
+    {
+        position: absolute;
+        right: 1rem;
+        top: 0.8rem;
+        background-color: transparent;
+        border: none;    
+    }
+    #toggle-nav i,#toggle-close i
+    {
+        color: white;
+        font-size: 1.5rem;
+    }
+    #close
+    {
+        display: none;
+    }
+    .home .details
+    {
+        padding-top: 8rem !important;
+        padding-bottom: 0 !important;  
+    }
+    .title
+    {
+        overflow-x: hidden;
+    }
+    .about .content
+    {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+    .about .intro
+    {
+        padding: 4rem 2rem !important;
+    }
+    .about .artwork
+    {
+        padding-top: 3rem !important;
+        padding-bottom: 0 !important;  
+    }
+    .logo
+    {
+        padding-top: 0rem !important;
+    }
+    .skills .education
+    {
+        padding-top: 1rem !important;
+    }
+    .skills .education .row .col-lg .box
+    {
+        width:90%;
+    }
+    .contact .call
+    {
+        padding: 0rem 0rem !important;
+    }
+    .contact .box form
+    {
+        width: 100% !important;
+    }
+    .footer .copyrights, .footer .myname
+    {
+        text-align: center !important;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1007px){
+    *
+    {
+        font-size: 14px;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 500;
+        scroll-behavior: smooth;
+    }
+    #menu
+    {
+        position: fixed !important;
+        top: 3.6rem !important;
+        left: 0;
+        background-color: #002349;
+        text-align: center !important;
+        width: 100%;
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+        display: none;
+    }
+    .navbar ol
+    {
+        position: absolute !important;
+        left: 0;
+        text-align: center;
+        width: 100% !important;
+    }
+    .navbar ol li
+    {
+        position: relative !important;
+        left: 0;
+        margin-left: 8% !important;
+    }
+    .navbar ol li a
+    {
+        font-size: 1.2rem !important;
+    }
+    .navbar ol li a:hover
+    {
+        font-size: 1.4rem !important;
+    }
+    #toggle-nav button,#toggle-close button
+    {
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        background-color: transparent;
+        border: none;
+        
+    }
+    #toggle-nav i,#toggle-close i
+    {
+        color: white;
+        font-size: 1.5rem;
+    }
+    #close
+    {
+        display: none;
+    }
+    .home .details
+    {
+        padding-top: 10rem !important;
+        padding-bottom: 0 !important;  
+    }
+    .about .content
+    {
+        padding-top: 3rem !important;
+        padding-bottom: 0rem !important;
+    }
+    .about .intro
+    {
+        padding: 4rem 2rem !important;
+    }
+    .about .artwork
+    {
+        padding-top: 5rem !important;
+        padding-bottom: 4rem !important;  
+    }
+    .logo
+    {
+        padding: 1rem 10rem !important;
+    }
+    .skills .education .row .col-lg
+    {
+        padding: 1rem 10rem !important;
+    }
+    .skills .education .row .col-lg .box
+    {
+        width:90%;
+    }
+    .projects .content .col-lg
+    {
+        padding: 1rem 10rem !important;
+    }
+    .contact .call
+    {
+        padding: 0rem 0rem !important;
+    }
+    .contact .box form
+    {
+        width: 80% !important;
+    }
+    .footer .copyrights, .footer .myname
+    {
+        text-align: center !important;
+    }
+}
+
+@media screen and (min-width: 1008px) and (max-width: 1920px){
+    *
+    {
+        font-size: 16px;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 500;
+        scroll-behavior: smooth;
+    }
+    #toggle-nav button,#toggle-close button
+    {
+        display: none; 
+    }
+}
+
+@media screen and (min-width: 1921px){
+    *
+    {
+        font-size: 20px;
+        font-family: 'Nunito';
+        font-weight: 500;
+        scroll-behavior: smooth;
+    }
+    #toggle-nav button,#toggle-close button
+    {
+        display: none; 
+    }
+}
+
+body
+{
+    background-color: #002349;
+}
+
+/* ----------------------------------------------------------Fixed Navbar---------------------------------------------------------- */
+.fixed-navbar
+{
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    background-color: #002349; 
+    z-index: 5; 
+}
+.navbar span
+{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: white;
+}
+.navbar ol
+{
+    list-style-type: none;
+    float: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+}
+.navbar ol li
+{
+    float: left;
+    text-align: center;
+    margin-left: 2rem;
+    position: relative;
+    top: 0.5rem;
+    width: 5rem;
+    max-width: 5rem;
+    height: 2rem;
+    max-height: 2rem;
+}
+.navbar ol li a
+{
+    text-align: center;
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 700;
+    font-size: 1.2rem;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.navbar ol li a.active
+{
+    color: #00ABE4;
+    font-size: 1.25rem;
+}
+
+
+/* ----------------------------------------------------------Footer page---------------------------------------------------------- */
+
+.footer
+{
+    position: relative;
+    top: -0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: #002349;
+    color: white;
+}
+.footer small
+{
+    font-weight: 400;
+}
+.footer .copyrights
+{
+    opacity: 0.8;
+}
+.footer .myname
+{
+    text-align: right;
+    opacity: 0.8;
+}
+
+
+/* ----------------------------------------------------------Animation---------------------------------------------------------- */
+
+@-webkit-keyframes bounce
+{
+    0%
+    {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+    50%
+    {
+        -webkit-transform: translateY(-0.3rem);
+                transform: translateY(-0.3rem);
+    }
+    100%
+    {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+}
+@keyframes bounce
+{
+    0%
+    {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+    50%
+    {
+        -webkit-transform: translateY(-0.3rem);
+                transform: translateY(-0.3rem);
+    }
+    100%
+    {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+}
